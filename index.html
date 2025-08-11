@@ -5,50 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>HTML</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+  <title>Tebak Angka Rahasia</title>
 </head>
-
 <body>
-  <p> latihan21</p>
-  <script>
-    
-    let x = 5
-    let y = 3
-    let z = 100
-    let hasil = x + y + z
-  //  alert(hasil)
-    
-    let a = 4 
-    let b = 6 
-    let nilai =a * b
-    //alert(nilai)
- 
-  let diskon =  prompt('menentukan diskon belanja')
-       if (diskon > 50000) { 
-         alert('selamat! johnson mendapatkan diskon10%')
-       } else if (diskon < 50000) {
-         alert('maaf, johnson belum mendapatkan diskon')
-       }
-       
-       let umur =  prompt('menentukan umur')
-       if (umur < 17) { 
-         alert('kamu masih anak anak')
-       } else if (umur > 17) {
-         alert('kamu sudah dewasa')
-       }
- 
-    
-  </script>
-    
   
-  
-  
-  <script src="main.js"></script>
+<script>
+  // Buat variabel angkaRahasia
+  let angkaRahasia = 7;
+
+  // Minta input dari Andi
+  let tebakanAndi = prompt("Masukkan tebakan Andi (angka):");
+
+  // Ubah input ke number
+  tebakanAndi = Number(tebakanAndi);
+
+  // Cek hasil tebakan
+  if (tebakanAndi === angkaRahasia) {
+    alert("Tebakan Andi benar!");
+  } else if (tebakanAndi < angkaRahasia) {
+    alert("Tebakan Andi terlalu kecil");
+  } else if (tebakanAndi > angkaRahasia) {
+    alert("Tebakan Andi terlalu besar");
+  } else {
+    alert("Input tidak valid");
+  }
+</script>
+
 </body>
 </html>
